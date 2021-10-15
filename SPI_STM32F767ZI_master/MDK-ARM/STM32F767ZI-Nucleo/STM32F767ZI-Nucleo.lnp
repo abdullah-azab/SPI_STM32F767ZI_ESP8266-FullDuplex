@@ -1,0 +1,10 @@
+--cpu Cortex-M7.fp.dp
+"stm32f767zi-nucleo\startup_stm32f767xx.o"
+"stm32f767zi-nucleo\main.o"
+"stm32f767zi-nucleo\stm32f7xx_it.o"
+"stm32f767zi-nucleo\stm32f7xx_ll_utils.o"
+"stm32f767zi-nucleo\system_stm32f7xx.o"
+--library_type=microlib --strict --scatter "STM32F767ZI-Nucleo\STM32F767ZI-Nucleo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32F767ZI-Nucleo.map" -o STM32F767ZI-Nucleo\STM32F767ZI-Nucleo.axf
